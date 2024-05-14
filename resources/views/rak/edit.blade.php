@@ -24,7 +24,7 @@
                             <div class="form-group">
                             <label for="exampleInputEmail1">Lokasi</label>
                             <input type="text" name="lokasi" class="form-control" placeholder="Tulis Lokasi" value="{{ old('lokasi', $dataRak->lokasi) }}">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your location with anyone else.</small>
+                            <small id="emailHelp" class="form-text text-muted"></small>
                             @error('lokasi')
                             <div class="alert alert-danger mt-2">
                                 {{ $message }}

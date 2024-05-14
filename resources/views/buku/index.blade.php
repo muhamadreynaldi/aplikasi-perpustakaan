@@ -52,6 +52,8 @@
                                         </form>
                                     </td>
                                 </tr>
+                                <a href="{{ route('penulis.index', $buku->penulis->id) }}" class="btn btn-md btn-info mb-3 me-1">Laman Penulis</a>
+                                <a href="{{ route('rak.index', $buku->rak->id) }}" class="btn btn-md btn-info mb-3">Laman Rak</a>
                             @endforeach
                         </tbody>
                     </table>

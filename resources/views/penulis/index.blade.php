@@ -46,6 +46,7 @@
                                             </form>
                                         </td>
                                     </tr>
+                                    <a href="{{ route('rak.index')}}" class="btn btn-md btn-info mb-3">Laman Rak</a>
                                 @endforeach
                             </tbody>
                         </table>

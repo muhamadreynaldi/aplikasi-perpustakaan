@@ -39,6 +39,8 @@
                                             </form>
                                         </td>
                                     </tr>
+                                <a href="{{ route('penulis.index') }}" class="btn btn-md btn-info mb-3 me-1">Laman Penulis</a>
+                                <a href="{{ route('buku.index') }}" class="btn btn-md btn-info mb-3">Laman Buku</a>
                                 @endforeach
                             </tbody>
                         </table>
