@@ -20,3 +20,4 @@ Route::get('/', function () {
 Route::resource('/penulis',\App\Http\Controllers\PenulisController::class);
 Route::resource('/rak',\App\Http\Controllers\RakController::class);
 Route::resource('/buku',\App\Http\Controllers\BukuController::class);
+Route::resource('/anggota',\App\Http\Controllers\AnggotaController::class);
