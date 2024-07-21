@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreign('id_penulis')->references('id')->on('penulis');
             $table->unsignedBigInteger('id_rak');
             $table->foreign('id_rak')->references('id')->on('rak');
-            $table->bigInteger('no_buku')->primary();
+            $table->bigInteger('no_buku')->unsigned()->primary();
             $table->string('judul', 200);
             $table->string('edisi', 50);
             $table->date('tahun');
