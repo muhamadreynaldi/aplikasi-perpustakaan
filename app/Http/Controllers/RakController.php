@@ -50,7 +50,7 @@ class RakController extends Controller
 
     public function update(Request $request, $id): RedirectResponse
     {
-        //validate form
+        //validate form absolut
         $request->validate([
             'lokasi'      => 'required|min:2'
         ]);
