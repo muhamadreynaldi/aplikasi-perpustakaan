@@ -18,8 +18,11 @@
                             <a href="{{ route('sanksi.index') }}" class="inline-block ml-4 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">
                                 Manage Sanksi
                             </a>
+                            <a href="{{ route('anggota.index') }}" class="inline-block ml-4 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600">
+                                Manage Anggota
+                            </a>
                         </div>
-                        <div><h1>-</h1></div>
+                    @elseif (auth()->user()->role === 'pustakawan')
                         <p class="font-semibold text-xl">Welcome, Pustakawan!</p>
                         <div class="mt-6">
                             <a href="{{ route('buku.index') }}" class="inline-block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">

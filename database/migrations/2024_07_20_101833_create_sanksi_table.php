@@ -17,7 +17,6 @@ return new class extends Migration
             $table->foreign('id_anggota')->references('id')->on('anggota');
             $table->unsignedBigInteger('id_peminjaman');
             $table->foreign('id_peminjaman')->references('id')->on('peminjaman');
-            $table->integer('jumlah_denda');
             $table->enum('status', ['tunggakan', 'lunas'])->default('tunggakan')->notNull();
             $table->timestamps();
         });

@@ -8,10 +8,12 @@ use App\Http\Controllers\SanksiController;
 use App\Http\Controllers\BukuController;
 use App\Http\Controllers\RakController;
 use App\Http\Controllers\PenulisController;
+use App\Http\Controllers\AnggotaController;
 
 Route::middleware(['auth', 'role:anggota'])->group(function () {
     Route::resource('/peminjaman', PeminjamanController::class);
     Route::resource('/sanksi', SanksiController::class);
+    Route::resource('/anggota', AnggotaController::class);
 });
 
 Route::middleware(['auth', 'role:pustakawan'])->group(function () {
